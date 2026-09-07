@@ -1,0 +1,394 @@
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background: rgba(15, 17, 23, 0.85);
+  backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  height: 75px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-links a {
+  color: #b8bbc5;
+  font-size: 15px;
+
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ffffff;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+#inicio {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  padding-top: 120px;
+}
+
+#inicio > div {
+  max-width: 800px;
+}
+
+#inicio p:first-child {
+  color: #7c8cff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#inicio h1 {
+  font-size: clamp(45px, 7vw, 80px);
+  line-height: 1.05;
+  letter-spacing: -3px;
+
+  margin-bottom: 30px;
+}
+
+#inicio p:nth-of-type(2) {
+  max-width: 650px;
+
+  color: #aeb1bb;
+  font-size: 19px;
+
+  margin-bottom: 40px;
+}
+
+#inicio a {
+  display: inline-block;
+
+  padding: 14px 25px;
+  margin-right: 15px;
+
+  border-radius: 8px;
+
+  background: #7c8cff;
+
+  color: #ffffff;
+  font-weight: 600;
+
+  transition: transform 0.3s ease,
+              background 0.3s ease;
+}
+
+#inicio a:hover {
+  transform: translateY(-3px);
+  background: #6576ee;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+#sobre-mi {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+#sobre-mi > div {
+  max-width: 800px;
+}
+
+#sobre-mi p:first-child,
+#proyectos p:first-child,
+#habilidades p:first-child,
+#contacto p:first-child {
+  color: #7c8cff;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#sobre-mi h2,
+#proyectos h2,
+#habilidades h2,
+#contacto h2 {
+  font-size: 42px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+#sobre-mi p:not(:first-child) {
+  color: #aeb1bb;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+#proyectos {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+#proyectos > div:first-child {
+  margin-bottom: 50px;
+}
+
+#proyectos > div:first-child p:last-child {
+  color: #aeb1bb;
+  font-size: 18px;
+}
+
+#proyectos > div:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+#proyectos article {
+  overflow: hidden;
+
+  background: #171a23;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+
+  transition: transform 0.3s ease,
+              border-color 0.3s ease;
+}
+
+#proyectos article:hover {
+  transform: translateY(-8px);
+  border-color: rgba(124, 140, 255, 0.5);
+}
+
+#proyectos article > div:first-child {
+  width: 100%;
+  height: 280px;
+
+  overflow: hidden;
+}
+
+#proyectos article img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+#proyectos article:hover img {
+  transform: scale(1.05);
+}
+
+#proyectos article > div:last-child {
+  padding: 30px;
+}
+
+#proyectos article span:first-child {
+  color: #7c8cff;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#proyectos article h3 {
+  font-size: 25px;
+  margin: 10px 0 15px;
+}
+
+#proyectos article p {
+  color: #aeb1bb;
+  margin-bottom: 20px;
+}
+
+#proyectos article div div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-bottom: 25px;
+}
+
+#proyectos article div div span {
+  padding: 6px 10px;
+
+  background: #222631;
+
+  border-radius: 5px;
+
+  color: #c8cad1;
+
+  font-size: 12px;
+}
+
+#proyectos article a {
+  display: inline-block;
+
+  color: #ffffff;
+  font-weight: 600;
+}
+
+#proyectos article a:hover {
+  color: #7c8cff;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+#habilidades {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+#habilidades > div:first-child {
+  margin-bottom: 40px;
+}
+
+#habilidades > div:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#habilidades span {
+  padding: 12px 20px;
+
+  background: #171a23;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+
+  color: #d5d7df;
+
+  transition: transform 0.3s ease,
+              border-color 0.3s ease;
+}
+
+#habilidades span:hover {
+  transform: translateY(-4px);
+  border-color: #7c8cff;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+#contacto {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+
+  text-align: center;
+}
+
+#contacto > div {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#contacto p:nth-of-type(2) {
+  color: #aeb1bb;
+
+  font-size: 18px;
+
+  margin-bottom: 35px;
+}
+
+#contacto a {
+  display: inline-block;
+
+  padding: 14px 30px;
+
+  background: #7c8cff;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  transition: transform 0.3s ease;
+}
+
+#contacto a:hover {
+  transform: translateY(-3px);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  section {
+    padding: 80px 25px;
+  }
+
+  .navbar-container {
+    padding: 0 25px;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  #inicio h1 {
+    font-size: 48px;
+    letter-spacing: -2px;
+  }
+
+  #inicio p:nth-of-type(2) {
+    font-size: 17px;
+  }
+
+  #proyectos > div:last-child {
+    grid-template-columns: 1fr;
+  }
+
+  #sobre-mi h2,
+  #proyectos h2,
+  #habilidades h2,
+  #contacto h2 {
+    font-size: 36px;
+  }
+
+  #proyectos article > div:first-child {
+    height: 220px;
+  }
+}
