@@ -3,6 +3,7 @@ function Hero() {
     <section id="inicio">
 
       <div>
+
         <p>Hola, soy Agustín</p>
 
         <h1>
@@ -25,6 +26,7 @@ function Hero() {
             Contactarme
           </a>
         </div>
+
       </div>
 
     </section>
